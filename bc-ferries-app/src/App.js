@@ -6,6 +6,7 @@ import React, {
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { version, Button } from "antd";
 import "antd/dist/antd.css";
+import Navbar from './Navbar'
 export default class AppHandler extends Component {
 constructor(props){
   super(props);
@@ -16,6 +17,7 @@ constructor(props){
 render(){
   return(
     <div>
+      <Navbar/>
       <p>This is an  example of the default class</p>
     </div>
   )
