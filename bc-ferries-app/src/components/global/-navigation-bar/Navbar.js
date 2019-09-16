@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.scss';
 import React, {
     Component
 } from 'react';
@@ -11,6 +9,7 @@ export default class NavigationBar extends Component {
         super(props);
         this.state = {
             activeNaivigation: false,
+            sampleText: "This is a string example"
         }
     }
     componentDidMount() {
@@ -28,6 +27,7 @@ export default class NavigationBar extends Component {
                         <Col span={6}>asff</Col>
                         <Col span={6}>asfaf</Col>
                     </Row>
+                    <p>{this.state.sampleText}</p>
                 </Router>
             </div>
         )

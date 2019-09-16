@@ -6,7 +6,7 @@ import React, {
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { version, Button } from "antd";
 import "antd/dist/antd.css";
-import Navbar from './Navbar'
+import Navbar from './components/global/-navigation-bar/Navbar'
 export default class AppHandler extends Component {
 constructor(props){
   super(props);
