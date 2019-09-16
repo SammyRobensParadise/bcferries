@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
+import textHandler from './__static_class__/-text-handler';
 import React, {
   Component
 } from 'react';
@@ -11,7 +12,8 @@ export default class AppHandler extends Component {
 constructor(props){
   super(props);
   this.state = {
-    HasBeenLoaded: false
+    HasBeenLoaded: false,
+    dataHandle: new textHandler()
   }
 }
 render(){
@@ -19,6 +21,8 @@ render(){
     <div>
       <Navbar/>
       <p>This is an  example of the default class</p>
+      <p>{textHandler._getData}</p>
+      {console.log(textHandler)}
     </div>
   )
 }
